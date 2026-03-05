@@ -30,6 +30,7 @@
     font-family: var(--body);
     font-size: 14px;
     line-height: 1.6;
+    padding-top: 80px;
   }
 
   /* NAV */
@@ -80,6 +81,12 @@
     overflow: hidden;
   }
 
+  .alert-ticker-wrap {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
   .alert-label {
     background: var(--dark);
     color: var(--red);
@@ -106,6 +113,7 @@
     color: white;
     letter-spacing: 0.15em;
     padding-left: 32px;
+    will-change: transform;
   }
 
   @keyframes ticker {
@@ -115,7 +123,7 @@
 
   /* HERO */
   #hero {
-    padding-top: 80px;
+    padding-top: 0;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 420px;
@@ -683,9 +691,11 @@
 
 <div class="alert-bar">
   <div class="alert-label">STATUS</div>
-  <div class="alert-scroll">
-    <span>SEEKING SUMMER 2026 INTERNSHIP &nbsp;·&nbsp; AI AGENT SECURITY &nbsp;·&nbsp; MCP ANALYSIS IN PROGRESS &nbsp;·&nbsp; UNIVERSITY OF MINNESOTA &nbsp;·&nbsp; OPEN TO RESEARCH ROLES</span>
-    <span>SEEKING SUMMER 2026 INTERNSHIP &nbsp;·&nbsp; AI AGENT SECURITY &nbsp;·&nbsp; MCP ANALYSIS IN PROGRESS &nbsp;·&nbsp; UNIVERSITY OF MINNESOTA &nbsp;·&nbsp; OPEN TO RESEARCH ROLES</span>
+  <div class="alert-ticker-wrap">
+    <div class="alert-scroll">
+      <span>SEEKING SUMMER 2026 INTERNSHIP &nbsp;·&nbsp; AI AGENT SECURITY &nbsp;·&nbsp; MCP ANALYSIS IN PROGRESS &nbsp;·&nbsp; UNIVERSITY OF MINNESOTA &nbsp;·&nbsp; OPEN TO RESEARCH ROLES</span>
+      <span>SEEKING SUMMER 2026 INTERNSHIP &nbsp;·&nbsp; AI AGENT SECURITY &nbsp;·&nbsp; MCP ANALYSIS IN PROGRESS &nbsp;·&nbsp; UNIVERSITY OF MINNESOTA &nbsp;·&nbsp; OPEN TO RESEARCH ROLES</span>
+    </div>
   </div>
 </div>
 
